@@ -3,23 +3,48 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+     margin: 0;
+}
+.heading{
+    color:rgb(56, 56, 245);
 }
 
 /* nav-bar */
 nav{
-    background-color: rgb(0, 0, 124);
-    padding: 40px;
+    background-color: rgb(56, 56, 245);
+    padding: 0.4%;
     display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.aline{
+    display: flex;
+    align-items: center;
+    order: 2;
+    padding-right: 10%;
     
 }
+.aline img{
+    margin: 5%;
+}
 nav{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 1.3em;
+    margin-left: 5%;
 }
+nav .idea{
+    color: white;
+    font-size: 1.3em; 
+    padding-left: 10%;
+}
+
+/* nav end */
+
+
 h2{
     
 font-size: 
@@ -94,10 +119,13 @@ top-blog -----------*/
     */
     .course{
         box-shadow: 10px 20px 40px rgba(128, 128, 128, 0.219);
-       margin: 3%;
+       
        padding-bottom: 20px;
         border-radius: 10px;
         padding-top: 10px;
+        padding-left: 10px;
+       
+        
        
     }
    .courses{
@@ -107,7 +135,7 @@ top-blog -----------*/
       
        }
 .course .picture img{
-    width: 214px;
+    width: 90%;
     height: 104px;
     padding-left: 7px;
 }
@@ -122,8 +150,8 @@ top-blog -----------*/
 .duration{
     background-color: #FFE4E8;
     border-radius: 20px;
-    padding: 5px; 
-    margin-right: 10px;
+    padding: 1%;
+    margin-right: 8px;
 
     color: 
     #FF4A60
@@ -131,11 +159,24 @@ top-blog -----------*/
 
 .fa-star.filled{
     color: #FFC014;
-}
-.fa-star{
     font-size: 12px;
 }
 .latest-course{
     padding-left: 50px;
     padding-right: 50px;
+}
+
+/* ------------------------------------
+-----------responsive--------------- */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%; 
+       
+    }
+    .players, .blogs, .courses{
+grid-template-columns: repeat(1, 1fr);
+justify-content: center;
+    }
+     
+ 
 }
